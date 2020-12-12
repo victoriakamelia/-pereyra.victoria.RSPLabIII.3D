@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="./js/lalala.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+
+<body>
+  <header>
+
+    <a href="#"><img src="./images/logo.png" alt="Logo" width="100px"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Nosotras</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>
+  <h1>Administración</h1>
+  <img src="./images/header.jpg" alt="Banner" width="100%" class="desaparecerImg">
+  </p>
+
+  <main>
+
+    <section class="conteiner">
+      <form>
+        <fieldset>
+          <legend>Información del anuncio</legend>
+          <ul class="flex-outer">
+            <li>
+              <input class="deshabilitar" type="number" name="id" id="txtId">
+            </li>
+            <li>
+              <label for="txtTitulo">Titulo</label>
+              &nbsp;
+              <input type="text" name="titulo" id="txtTitulo" required>
+            </li>
+            <li>
+              <label>Transacción</label>
+              &nbsp;
+              <ul class="flex-inner">
+                <li>
+                  <label for="rdoV">
+                    <input type="radio" name="transaccion" id="rdoV" value="Venta" checked>Venta
+                  </label>
+                  &nbsp;
+                  <label for="rdoV">
+                    <input type="radio" name="transaccion" id="rdoA" value="Alquiler">Alquiler
+                  </label>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <label for="txtDescripcion">Descripcion</label>
+              &nbsp;
+              <input type="text" name="descripcion" id="txtDescripcion" required>
+            </li>
+
+            <li>
+              <label for="numbPrecio">Precio</label>
+              &nbsp;
+              <input type="number" name="precio" id="numbPrecio" required>
+            </li>
+
+            <li>
+              <label for="numbPuertas"><img src="./images/puertas.ico" alt="" width="20px"></label>
+              <input type="number" name="puertas" id="numbPuertas" placeholder="Puertas" required>
+              <label for="numbPotencia"><img src="./images/potencia.ico" alt="" width="20px"></label>
+              <input type="number" name="descripcion" required id="numbPotencia" placeholder="Potencia">
+              <label for="numbKMs"><img src="./images/kms.ico" alt="" width="20px"></label>
+              <input type="number" name="kms" id="numbKMs" placeholder="Kilómetros" required>
+            </li>
+
+            <li>
+              <input type="checkbox" id="frenos_ok" value="verifico_frenos" name="Frenos">Frenos
+              &nbsp;
+              <input type="checkbox" id="luces_ok" value="verifico_luces" name="Luces">Luces
+              &nbsp;
+              <input type="checkbox" id="aceite_ok" value="verifico_aceite" name="Aceite">Aceite
+            </li>
+
+
+            <li>
+              <label>Estado</label>
+              &nbsp;
+              <ul class="flex-inner">
+                <li>
+                  <label for="rdoN">
+                    <input type="radio" name="estado" id="rdoN" value="Nuevo" checked>Nuevo
+                  </label>
+                  &nbsp;
+                  <label for="rdoU">
+                    <input type="radio" name="estado" id="rdoU" value="Usado">Usado
+                  </label>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <button id="btnGuardar" class="botonVerde" type="submit"><img src="./images/guardar.ico" alt=""
+                  width="10px"></i>Guardar</button>
+              <button class="deshabilitar" id="btnBaja">Baja Anuncio</button>
+              <button class="deshabilitar" id="btnModificar" type="submit">Modificar Anuncio</button>
+              <button id="btnCancelar" class="btn btn-outline-dark">Cancelar</button>
+              <button id="btnLimpiarTabla" type="reset" class="btn btn-primary">Limpiar tabla</button>
+            </li>
+
+          </ul>
+
+        </fieldset>
+      </form>
+
+
+
+    </section class="conteiner">
+  
+    </div>
+
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+    </section>
+
+    <section class="conteiner">
+      <div id="divTabla"></div>
+    </section>
+
+    <div class="container container animate__animated animate__fadeInRight"
+      style="border: 1px solid black; border-radius: 15px;">
+      <div class="row text-center pb-5">
+        <div class="col-6 pt-3">
+          <div class="dropdown">
+            <p>
+              Filtrar por
+            </p>
+
+            <select class="combo" name="tipoTransaccion" id="filtroTransaccion">
+              <!-- <option hidden disabled selected value="">Animal</option> -->
+              <option value="Alquiler">Alquiler</option>
+              <option value="Venta">Venta</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-5">
+          <label class="col-form-label">Promedio precios</label>
+          <div class="pb-3">
+            <input class="form-control" type="text" id="txtFiltroPrecios" value="N/A" disabled>
+          </div>
+          <label class="col-form-label">Promedio Potencia</label>
+          <div class="pb-3">
+            <input class="form-control" type="text" id="txtFiltroPotencia" value="N/A" disabled>
+          </div>
+
+          <label class="col-form-label">Potencia Maxima</label>
+          <div class="pb-3">
+            <input class="form-control" type="text" id="txtFiltroPotenciaMin" value="N/A" disabled>
+          </div>
+
+          <label class="col-form-label">Potencia Minima</label>
+          <div class="pb-3">
+            <input class="form-control" type="text" id="txtFiltroPotenciaMax" value="N/A" disabled>
+          </div>
+
+
+
+
+
+
+
+        </div>
+          <div class="pb-3">
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <input type ="button" onclick="calcularGrafico()" value="Graficos">
+          </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Nosotras</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>Todos los derechos reservados 2020</p>
+  </footer>
+</body>
+
+</html>
+
+<script>
+function calcularGrafico(){
+
+let listaAuncios = [1,2,3,1,2,1,1,1,4,5,5,4,4];
+
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Auto1', 'Auto2', 'Auto3', 'Auto4', 'Auto5'],
+        datasets: [{
+            label: '# of Votes',
+            data: [4, 2, 1, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+         
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+              
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+}
+
+
+</script>

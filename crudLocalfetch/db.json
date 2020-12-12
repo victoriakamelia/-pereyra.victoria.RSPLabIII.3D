@@ -1,0 +1,60 @@
+{
+  "entidades": [
+    {
+      "id": 1,
+      "titulo": "Aoioio",
+      "transaccion": "Venta",
+      "descripcion": "Alquiler 1",
+      "precio": 2,
+      "puertas": "5",
+      "KMS": "500",
+      "potencia": "500",
+      "frenos": "SI",
+      "luces": "NO",
+      "aceite": "NO",
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "titulo": "VAMO",
+      "transaccion": "Alquiler",
+      "descripcion": "VAMO",
+      "precio": 9,
+      "puertas": "9",
+      "KMS": "9",
+      "potencia": "9",
+      "frenos": "NO",
+      "luces": "NO",
+      "aceite": "NO",
+      "estado": "Usado"
+    },
+    {
+      "id": 3,
+      "titulo": "ii",
+      "transaccion": "Alquiler",
+      "descripcion": "iii",
+      "precio": 9,
+      "puertas": "9",
+      "KMS": "9",
+      "potencia": "9",
+      "frenos": "NO",
+      "luces": "NO",
+      "aceite": "NO",
+      "estado": "Usado"
+    },
+    {
+      "id": 4,
+      "titulo": "55",
+      "transaccion": "Venta",
+      "descripcion": "55",
+      "precio": 5,
+      "puertas": "55",
+      "KMS": "55",
+      "potencia": "55",
+      "frenos": "NO",
+      "luces": "NO",
+      "aceite": "NO",
+      "estado": "Usado"
+    }
+  ]
+}
